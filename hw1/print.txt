@@ -1,0 +1,9 @@
+li $a1,0x80
+li $a0,0x21
+li $v0,30
+syscall
+addiu $a0,$a0,1
+bne $a1,$a0,-12
+nop
+jr $31
+nop
